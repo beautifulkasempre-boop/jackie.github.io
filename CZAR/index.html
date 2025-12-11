@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmashZone - Premium Badminton Equipment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <h1>SmashZone</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Smash Zone Shop • Gear Up for Victory</div>
+                <h1>Modern Badminton Gear for Faster Wins</h1>
+                <p>Stringed rackets, explosive shoes, and pro-grade shuttles tailored for speed, control, and power.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-cta">Shop Now</a>
+                    <a href="#about" class="btn ghost-btn">Learn More</a>
+                </div>
+                <div class="hero-search-box">
+                    <div class="hero-search">
+                        <input type="text" id="product-search" placeholder="Search rackets, shoes, strings...">
+                        <select id="product-filter">
+                            <option value="all">All Gear</option>
+                            <option value="rackets">Rackets</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="shuttles">Shuttles</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                        <button class="btn" id="search-btn">Find Gear</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">5K+</span>
+                            <span class="stat-label">Players Served</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24h</span>
+                            <span class="stat-label">Fast Dispatch</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Pro</span>
+                            <span class="stat-label">Stringing Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all"><span class="icon">🏸</span> All</button>
+                <button class="category-btn" data-category="rackets"><span class="icon">🏸</span> Rackets</button>
+                <button class="category-btn" data-category="shoes"><span class="icon">👟</span> Shoes</button>
+                <button class="category-btn" data-category="shuttles"><span class="icon">🪁</span> Shuttles</button>
+                <button class="category-btn" data-category="accessories"><span class="icon">🎒</span> Accessories</button>
+            </div>
+            <div class="feature-stripe">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <div>
+                        <h4>Speed & Control</h4>
+                        <p>Head-light frames for rapid defense and lightning drives.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shoe-prints"></i>
+                    <div>
+                        <h4>Grip & Stability</h4>
+                        <p>Shock-absorbing midsoles and anti-slip rubber outsoles.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-feather"></i>
+                    <div>
+                        <h4>Match-Ready Shuttles</h4>
+                        <p>Durable flight with tournament-grade consistency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid" id="product-container">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About SmashZone</h2>
+            <p>SmashZone is your one-stop shop for premium badminton equipment. We offer high-quality rackets, shoes, shuttles, and accessories from top brands to help you perform your best on the court.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SmashZone</h3>
+                    <p>Your premier destination for badminton equipment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@smashzone.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SmashZone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total">₱0.00</span></p>
+            <button class="btn checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
